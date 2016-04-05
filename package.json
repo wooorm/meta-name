@@ -1,6 +1,6 @@
 {
   "name": "meta-name",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "List of values for `name` on `meta`",
   "license": "MIT",
   "keywords": [

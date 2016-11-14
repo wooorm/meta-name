@@ -11,21 +11,14 @@ elements, as defined by [HTML5][spec] and [MetaExtensions][extensions].
 npm install meta-name
 ```
 
-**meta-name** is also available as an AMD, CommonJS, and globals
-module, [uncompressed and compressed][releases].
-
 ## Usage
-
-Dependencies:
 
 ```javascript
 var metaName = require('meta-name');
-```
 
-Slicing the first few items:
+console.log(metaName.length); //=> 353
 
-```javascript
-var head = metaName.slice(0, 10);
+console.log(metaName.slice(0, 10));
 ```
 
 Yields:
@@ -41,18 +34,6 @@ Yields:
   'aglsterms.category',
   'aglsterms.datelicensed',
   'aglsterms.documenttype' ]
-```
-
-And, computing `length`:
-
-```javascript
-var length = metaName.length;
-```
-
-Yields:
-
-```js
-353
 ```
 
 ## API
@@ -73,8 +54,6 @@ on `meta` elements.
 [build-page]: https://travis-ci.org/wooorm/meta-name
 
 [npm]: https://docs.npmjs.com/cli/install
-
-[releases]: https://github.com/wooorm/meta-name/releases
 
 [license]: LICENSE
 

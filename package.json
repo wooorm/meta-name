@@ -25,17 +25,13 @@
     "bail": "^1.0.0",
     "browserify": "^13.0.0",
     "esmangle": "^1.0.1",
-    "remark": "^4.0.0",
-    "remark-comment-config": "^3.0.0",
-    "remark-github": "^4.0.1",
-    "remark-lint": "^3.0.0",
-    "remark-usage": "^3.0.0",
-    "remark-validate-links": "^3.0.0",
+    "remark-cli": "^2.1.0",
+    "remark-preset-wooorm": "^1.0.0",
     "tape": "^4.4.0",
     "xo": "^0.17.1"
   },
   "scripts": {
-    "build-md": "remark . --quiet --frail",
+    "build-md": "remark . --quiet --frail --output",
     "build-crawl": "node script/build.js",
     "build-bundle": "browserify index.json --bare -s metaName > meta-name.js",
     "build-mangle": "esmangle meta-name.js > meta-name.min.js",
@@ -49,5 +45,8 @@
     "ignore": [
       "meta-name.js"
     ]
+  },
+  "remarkConfig": {
+    "presets": "wooorm"
   }
 }

@@ -24,6 +24,7 @@
   "devDependencies": {
     "bail": "^1.0.0",
     "browserify": "^13.0.0",
+    "concat-stream": "^1.5.2",
     "esmangle": "^1.0.1",
     "remark-cli": "^2.1.0",
     "remark-preset-wooorm": "^1.0.0",
@@ -32,7 +33,7 @@
   },
   "scripts": {
     "build-md": "remark . --quiet --frail --output",
-    "build-crawl": "node script/build.js",
+    "build-crawl": "node build",
     "build-bundle": "browserify index.json --bare -s metaName > meta-name.js",
     "build-mangle": "esmangle meta-name.js > meta-name.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",

@@ -10,20 +10,17 @@
     "attribute",
     "w3c"
   ],
-  "dependencies": {},
-  "files": [
-    "index.js",
-    "index.json"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/meta-name.git"
-  },
+  "repository": "https://github.com/wooorm/meta-name",
   "bugs": "https://github.com/wooorm/meta-name/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)"
   ],
+  "main": "index.json",
+  "files": [
+    "index.json"
+  ],
+  "dependencies": {},
   "devDependencies": {
     "bail": "^1.0.0",
     "browserify": "^13.0.0",
@@ -40,7 +37,7 @@
   "scripts": {
     "build-md": "remark . --quiet --frail",
     "build-crawl": "node script/build.js",
-    "build-bundle": "browserify index.js --bare -s metaName > meta-name.js",
+    "build-bundle": "browserify index.json --bare -s metaName > meta-name.js",
     "build-mangle": "esmangle meta-name.js > meta-name.min.js",
     "build": "npm run build-md && npm run build-bundle && npm run build-mangle",
     "lint": "xo",

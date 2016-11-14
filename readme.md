@@ -1,4 +1,4 @@
-# meta-name [![Build Status][build-badge]][build-page] [![Coverage Status][coverage-badge]][coverage-page]
+# meta-name [![Build Status][build-badge]][build-page]
 
 List of values viable for use as `name` attributes on `meta`
 elements, as defined by [HTML5][spec] and [MetaExtensions][extensions].
@@ -71,10 +71,6 @@ on `meta` elements.
 [build-badge]: https://img.shields.io/travis/wooorm/meta-name.svg
 
 [build-page]: https://travis-ci.org/wooorm/meta-name
-
-[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/meta-name.svg
-
-[coverage-page]: https://codecov.io/github/wooorm/meta-name?branch=master
 
 [npm]: https://docs.npmjs.com/cli/install
 

@@ -10,7 +10,7 @@
     "attribute",
     "w3c"
   ],
-  "repository": "https://github.com/wooorm/meta-name",
+  "repository": "wooorm/meta-name",
   "bugs": "https://github.com/wooorm/meta-name/issues",
   "author": "Titus Wormer <tituswormer@gmail.com> (http://wooorm.com)",
   "contributors": [

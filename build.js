@@ -9,7 +9,7 @@ var unified = require('unified');
 var parse = require('rehype-parse');
 var q = require('hast-util-select');
 var toString = require('hast-util-to-string');
-var list = require('./');
+var list = require('.');
 
 https.get('https://wiki.whatwg.org/wiki/MetaExtensions', function (res) {
   res.pipe(concat(onconcat)).on('error', bail);

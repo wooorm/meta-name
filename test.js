@@ -2,7 +2,7 @@
 
 var assert = require('assert');
 var test = require('tape');
-var metaName = require('./');
+var metaName = require('.');
 
 test('metaName', function (t) {
   t.ok(

@@ -3,3 +3,4 @@
 node_modules/
 meta-name.js
 meta-name.min.js
+yarn.lock

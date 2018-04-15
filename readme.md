@@ -14,11 +14,11 @@ npm install meta-name
 ## Usage
 
 ```javascript
-var metaName = require('meta-name');
+var metaName = require('meta-name')
 
-console.log(metaName.length); //=> 356
+console.log(metaName.length) //=> 356
 
-console.log(metaName.slice(0, 10));
+console.log(metaName.slice(0, 10))
 ```
 
 Yields:

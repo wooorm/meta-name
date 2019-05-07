@@ -16,7 +16,7 @@ npm install meta-name
 ```javascript
 var metaName = require('meta-name')
 
-console.log(metaName.length) //=> 373
+console.log(metaName.length) //=> 376
 
 console.log(metaName.slice(0, 10))
 ```

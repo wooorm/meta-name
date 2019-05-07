@@ -1,14 +1,14 @@
 language: node_js
 node_js:
-- lts/boron
-- node
+  - lts/boron
+  - node
 deploy:
   provider: releases
   skip_cleanup: true
   api_key:
-    secure: T3UwZT4z3h42Qo/AMZdZHeZa5k/VhkYHOrsiiGxqc5mDnXABEFjv3KrYtQ25qmTB1nxFaiHtSxh7f3ANnLJbCCvl6Y06eaxhBluUeti5PSHrLy6DfadlyhoZ6sNCQChJhXbVoz8GMBlXA/bAWX+Wkwmel35myjJqfstbftMmjt4PpW5mFDIGWP/CZRXs0NU8rzkQ4XiDi2oyoFAi0W5phJ9xLgU9fYXKJAw8lRSTxJUDFfI+Xh63Vo2oVZOvzxy0R+PeafjfzLXtPtC6vBhiYa7fPE2qK6U65XtAPebgz6yWr6slzOsbfeQSwVGeVtdgtg0QI1ZQsGsblyVTbG+rIp2ojBztsukA3WOhALqEOkBE0t5KCqo8B3Y9FUTZEpHBrR0xm3OBRQHvzl+Qif1xLkkInrJ53VvnQ6W9jdiBH0Mzsnq9fTbfdKgZtbz9dQRIr1G2ViUiLXBOhAQu//MJAyimlb0qsqmcwe+kYfW4JIqMjCJgWqn/0KYFVQRk6bRhFOOWRh0EMuUPL4Hqb6u6Ot45eAqb5hSy+kElXQcsZhysmqhp5pLUbOxoFZAlKmfOR4laElY5dRmpuNuPwYBA7zMImyUgWlbcTFv28XIHQHkjFxwdGI7ewYIXDDYPzEaP0QJMOc7ZiKiTQv0+IO7bABtJeWVhGiZjG8zjGJGWqS0=
+    secure: ojMzLXsojFEyHaL48nrPzOy1CHtrE6E4aVMekVl2Th/HFmibODhrKeOwxWyvjEF+qj4NHV+1Yj0Nd3I7tkxCAzZl+4vXfjSVGtTvqr0wdoJ1NusvSB1uM4+/dCz8ZaUgH3XQGturWUfsemTsnvr3xPkR+XiRNzIJS7jzmaz4a3cZ2dKb8lzXYsSQDktVTEtsz4LsM2WkSHenxN9bnizMksDCdv2sL3e42kSUcWC4s9tMsJJTQMjnGb2s9WldxKuKujaIsY3kZbiG9l/jP1O1p38PI/kLp6xuQ++0wLrle3PCjUCE5wfEqCCJQhUe0fU78dTGHeXgM0L7AeXZBPmAy2A95ojKNPH2bAMuL9WFdPyiDOjI6G4tNadz6EgFvhcQyVhvM/Q90vGdZwfnvTMgT15aIA3V4sGykKCiSpW8PPQybrPRVHkplL6xu3zGgurIRd+Ve34bWAq+3YIlJvr9kcjM/349oYQNmYfCPkciAF6oUnntO8WWA88TNvOlro4Ik7e1jovHBWHJoshC28vEbFSJCsR2QztpnPwaF/Hpbi9KQdDJnnKz+mmxxfaZfwgJG/+ZWR/nno4h6sNuP4M4JD5rzT3PrfjwUGfk5dz6Il/OW2Pqa21oeaoIiHxJD7sbaeHeDMel/tvURiaTFheQF+AZkipvkby9bk/ACm9Q2UQ=
   file:
-    - "meta-name.js"
-    - "meta-name.min.js"
+    - 'meta-name.js'
+    - 'meta-name.min.js'
   on:
     tags: true

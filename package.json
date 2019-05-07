@@ -38,7 +38,7 @@
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
+    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
     "build-bundle": "browserify index.json --bare -s metaName > meta-name.js",
     "build-mangle": "esmangle meta-name.js > meta-name.min.js",
     "build": "npm run build-bundle && npm run build-mangle",

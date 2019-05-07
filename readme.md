@@ -57,7 +57,7 @@ on `meta` elements.
 
 [license]: license
 
-[author]: http://wooorm.com
+[author]: https://wooorm.com
 
 [spec]: https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names
 

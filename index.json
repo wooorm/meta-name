@@ -25,6 +25,7 @@
   "apple-touch-fullscreen",
   "application-name",
   "application-url",
+  "application-version",
   "appstore:bundle_id",
   "appstore:developer_url",
   "appstore:store_id",

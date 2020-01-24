@@ -4,20 +4,20 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-List of values viable for use as `name` attributes on `meta`
-elements, as defined by [HTML5][spec] and [MetaExtensions][extensions].
+List of values viable for use as `name` attributes on `meta` elements, as
+defined by [HTML][spec] and [MetaExtensions][extensions].
 
-## Installation
+## Install
 
 [npm][]:
 
-```bash
+```sh
 npm install meta-name
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var metaName = require('meta-name')
 
 console.log(metaName.length) //=> 376
@@ -44,8 +44,17 @@ Yields:
 
 ### `metaName`
 
-`Array.<string>` — List of lower-case possible values for `name`
-on `meta` elements.
+`Array.<string>` — List of lowercase possible values for `name` on `meta`
+elements.
+
+## Related
+
+*   [`wooorm/a-rel`](https://github.com/wooorm/a-rel)
+    — List of link types for `rel` on `a` and `area`
+*   [`wooorm/link-rel`](https://github.com/wooorm/link-rel)
+    — List of link types for `rel` on `link`
+*   [`wooorm/html-link-types`](https://github.com/wooorm/html-link-types)
+    — List of link types as used in HTML
 
 ## License
 

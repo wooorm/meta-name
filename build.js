@@ -31,7 +31,7 @@ function each(node) {
     .trim()
     .toLowerCase()
 
-  if (data && list.indexOf(data) === -1) {
+  if (data && !list.includes(data)) {
     list.push(data)
   }
 }

@@ -1,2 +1,4 @@
 meta-name.js
 meta-name.min.js
+*.json
+*.md

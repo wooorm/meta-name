@@ -14,8 +14,8 @@ var proc = unified().use(parse)
 
 https.get('https://wiki.whatwg.org/wiki/MetaExtensions', onconnection)
 
-function onconnection(res) {
-  res.pipe(concat(onconcat)).on('error', bail)
+function onconnection(response) {
+  response.pipe(concat(onconcat)).on('error', bail)
 }
 
 function onconcat(buf) {
@@ -27,9 +27,7 @@ function onconcat(buf) {
 }
 
 function each(node) {
-  var data = toString(node)
-    .trim()
-    .toLowerCase()
+  var data = toString(node).trim().toLowerCase()
 
   if (data && !list.includes(data)) {
     list.push(data)

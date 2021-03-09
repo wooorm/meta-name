@@ -1,6 +1,7 @@
 # meta-name
 
 [![Build][build-badge]][build]
+[![Coverage][coverage-badge]][coverage]
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
@@ -62,9 +63,13 @@ elements.
 
 <!-- Definition -->
 
-[build-badge]: https://img.shields.io/travis/wooorm/meta-name.svg
+[build-badge]: https://github.com/wooorm/meta-name/workflows/main/badge.svg
 
-[build]: https://travis-ci.org/wooorm/meta-name
+[build]: https://github.com/wooorm/meta-name/actions
+
+[coverage-badge]: https://img.shields.io/codecov/c/github/wooorm/meta-name.svg
+
+[coverage]: https://codecov.io/github/wooorm/meta-name
 
 [downloads-badge]: https://img.shields.io/npm/dm/meta-name.svg
 

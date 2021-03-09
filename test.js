@@ -1,8 +1,6 @@
-'use strict'
-
-var assert = require('assert')
-var test = require('tape')
-var metaName = require('.')
+import assert from 'assert'
+import test from 'tape'
+import {metaName} from './index.js'
 
 test('metaName', function (t) {
   t.ok(Array.isArray(metaName), 'should be an `array`')

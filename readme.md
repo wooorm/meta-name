@@ -10,6 +10,9 @@ defined by [HTML][spec] and [MetaExtensions][extensions].
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -19,9 +22,9 @@ npm install meta-name
 ## Use
 
 ```js
-var metaName = require('meta-name')
+import {metaName} from 'meta-name'
 
-console.log(metaName.length) //=> 376
+console.log(metaName.length) //=> 379
 
 console.log(metaName.slice(0, 10))
 ```
@@ -29,7 +32,8 @@ console.log(metaName.slice(0, 10))
 Yields:
 
 ```js
-[ 'aglsterms.accessibility',
+[
+  'aglsterms.accessibility',
   'aglsterms.accessmode',
   'aglsterms.act',
   'aglsterms.aggregationlevel',
@@ -38,15 +42,18 @@ Yields:
   'aglsterms.case',
   'aglsterms.category',
   'aglsterms.datelicensed',
-  'aglsterms.documenttype' ]
+  'aglsterms.documenttype'
+]
 ```
 
 ## API
 
+This package exports the following identifiers: `metaName`.
+There is no default export.
+
 ### `metaName`
 
-`Array.<string>` — List of lowercase possible values for `name` on `meta`
-elements.
+`string[]` — List of lowercase possible values for `name` on `meta` elements.
 
 ## Related
 

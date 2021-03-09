@@ -8,9 +8,10 @@ test('metaName', function (t) {
   t.ok(Array.isArray(metaName), 'should be an `array`')
 
   t.doesNotThrow(function () {
-    metaName.forEach(function (tagName) {
-      assert.strictEqual(typeof tagName, 'string', tagName)
-    })
+    var index = -1
+    while (++index < metaName.length) {
+      assert.strictEqual(typeof metaName[index], 'string', metaName[index])
+    }
   }, 'should be all `string`s')
 
   t.end()

@@ -20,16 +20,17 @@ function onconnection(response) {
 
 function onconcat(buf) {
   var table = q.select('table', proc.parse(buf))
+  var cells = q.selectAll('tbody tr td:first-child', table)
+  var index = -1
+  var data
 
-  q.selectAll('tbody tr td:first-child', table).forEach(each)
+  while (++index < cells.length) {
+    data = toString(cells[index]).trim().toLowerCase()
+
+    if (data && !list.includes(data)) {
+      list.push(data)
+    }
+  }
 
   fs.writeFile('index.json', JSON.stringify(list.sort(), 0, 2) + '\n', bail)
-}
-
-function each(node) {
-  var data = toString(node).trim().toLowerCase()
-
-  if (data && !list.includes(data)) {
-    list.push(data)
-  }
 }

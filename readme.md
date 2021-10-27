@@ -5,18 +5,56 @@
 [![Downloads][downloads-badge]][downloads]
 [![Size][size-badge]][size]
 
-List of values viable for use as `name` attributes on `meta` elements, as
-defined by [HTML][spec] and [MetaExtensions][extensions].
+List of values that can be used as `name`s on HTML `meta` elements.
+
+## Contents
+
+*   [What is this?](#what-is-this)
+*   [When should I use this?](#when-should-i-use-this)
+*   [Install](#install)
+*   [Use](#use)
+*   [API](#api)
+    *   [`metaName`](#metaname)
+*   [Types](#types)
+*   [Compatibility](#compatibility)
+*   [Security](#security)
+*   [Related](#related)
+*   [Contribute](#contribute)
+*   [License](#license)
+
+## What is this?
+
+This is a small package that lists all the valid values for `name` attributes on
+HTML `<meta>`.
+Those are defined by [MetaExtensions][extensions].
+
+## When should I use this?
+
+Probably never.
+Maybe as inspiration for when you’re writing meta or researching SEO and such.
+Or, when you’re making an HTML linter.
 
 ## Install
 
-This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
-instead of `require`d.
-
-[npm][]:
+This package is [ESM only][esm].
+In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 
 ```sh
 npm install meta-name
+```
+
+In Deno with [Skypack][]:
+
+```js
+import {metaName} from 'https://cdn.skypack.dev/meta-name@3?dts'
+```
+
+In browsers with [Skypack][]:
+
+```html
+<script type="module">
+  import {metaName} from 'https://cdn.skypack.dev/meta-name@3?min'
+</script>
 ```
 
 ## Use
@@ -55,14 +93,33 @@ There is no default export.
 
 `string[]` — List of lowercase possible values for `name` on `meta` elements.
 
+## Types
+
+This package is fully typed with [TypeScript][].
+
+## Compatibility
+
+This package is at least compatible with all maintained versions of Node.js.
+As of now, that is Node.js 12.20+, 14.14+, and 16.0+.
+It also works in Deno and modern browsers.
+
+## Security
+
+This package is safe.
+
 ## Related
 
 *   [`wooorm/a-rel`](https://github.com/wooorm/a-rel)
-    — List of link types for `rel` on `a` and `area`
+    — list of link types for `rel` on `a` and `area`
 *   [`wooorm/link-rel`](https://github.com/wooorm/link-rel)
-    — List of link types for `rel` on `link`
+    — list of link types for `rel` on `link`
 *   [`wooorm/html-link-types`](https://github.com/wooorm/html-link-types)
-    — List of link types as used in HTML
+    — list of link types as used in HTML
+
+## Contribute
+
+Yes please!
+See [How to Contribute to Open Source][contribute].
 
 ## License
 
@@ -88,10 +145,16 @@ There is no default export.
 
 [npm]: https://docs.npmjs.com/cli/install
 
+[skypack]: https://www.skypack.dev
+
 [license]: license
 
 [author]: https://wooorm.com
 
-[spec]: https://html.spec.whatwg.org/multipage/semantics.html#standard-metadata-names
+[esm]: https://gist.github.com/sindresorhus/a39789f98801d908bbc7ff3ecc99d99c
+
+[typescript]: https://www.typescriptlang.org
+
+[contribute]: https://opensource.guide/how-to-contribute/
 
 [extensions]: https://wiki.whatwg.org/wiki/MetaExtensions

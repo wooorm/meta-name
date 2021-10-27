@@ -32,9 +32,16 @@ function onconcat(buf) {
 
   fs.writeFile(
     'index.js',
-    'export const metaName = ' +
-      JSON.stringify(metaName.sort(), null, 2) +
-      '\n',
+    [
+      '/**',
+      ' * List of values that can be used as `name`s on HTML `meta` elements',
+      ' *',
+      ' * @type {string[]}',
+      ' */',
+      'export const metaName = ',
+      JSON.stringify(metaName.sort(), null, 2),
+      ''
+    ].join('\n'),
     bail
   )
 }

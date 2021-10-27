@@ -1,3 +1,8 @@
+/**
+ * List of values that can be used as `name`s on HTML `meta` elements
+ *
+ * @type {string[]}
+ */
 export const metaName = [
   'aglsterms.accessibility',
   'aglsterms.accessmode',

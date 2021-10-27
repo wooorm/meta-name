@@ -1,7 +1,7 @@
 {
   "name": "meta-name",
   "version": "2.0.0",
-  "description": "List of values for `name` on `meta`",
+  "description": "List of values that can be used as `name`s on HTML `meta` elements",
   "license": "MIT",
   "keywords": [
     "html",

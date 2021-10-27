@@ -18,10 +18,9 @@ function onconcat(buf) {
   const table = select('table', unified().use(rehypeParse).parse(buf))
   const cells = selectAll('tbody tr td:first-child', table)
   let index = -1
-  let data
 
   while (++index < cells.length) {
-    data = toString(cells[index]).trim().toLowerCase()
+    const data = toString(cells[index]).trim().toLowerCase()
 
     if (data && !metaName.includes(data)) {
       metaName.push(data)

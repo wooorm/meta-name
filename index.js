@@ -236,6 +236,8 @@ export const metaName = [
   'ie_rm_off',
   'itemsperpage',
   'keywords-not',
+  'license',
+  'license:uri',
   'meta_date',
   'microtip',
   'mobile-agent',

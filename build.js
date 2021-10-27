@@ -1,26 +1,24 @@
-import fs from 'fs'
-import https from 'https'
-import bail from 'bail'
-import concat from 'concat-stream'
-import unified from 'unified'
-import parse from 'rehype-parse'
-import q from 'hast-util-select'
-import toString from 'hast-util-to-string'
+import fs from 'node:fs'
+import https from 'node:https'
+import {bail} from 'bail'
+import concatStream from 'concat-stream'
+import {unified} from 'unified'
+import rehypeParse from 'rehype-parse'
+import {select, selectAll} from 'hast-util-select'
+import {toString} from 'hast-util-to-string'
 import {metaName} from './index.js'
-
-var proc = unified().use(parse)
 
 https.get('https://wiki.whatwg.org/wiki/MetaExtensions', onconnection)
 
 function onconnection(response) {
-  response.pipe(concat(onconcat)).on('error', bail)
+  response.pipe(concatStream(onconcat)).on('error', bail)
 }
 
 function onconcat(buf) {
-  var table = q.select('table', proc.parse(buf))
-  var cells = q.selectAll('tbody tr td:first-child', table)
-  var index = -1
-  var data
+  const table = select('table', unified().use(rehypeParse).parse(buf))
+  const cells = selectAll('tbody tr td:first-child', table)
+  let index = -1
+  let data
 
   while (++index < cells.length) {
     data = toString(cells[index]).trim().toLowerCase()
@@ -32,7 +30,9 @@ function onconcat(buf) {
 
   fs.writeFile(
     'index.js',
-    'export var metaName = ' + JSON.stringify(metaName.sort(), null, 2) + '\n',
+    'export const metaName = ' +
+      JSON.stringify(metaName.sort(), null, 2) +
+      '\n',
     bail
   )
 }

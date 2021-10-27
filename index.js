@@ -1,4 +1,4 @@
-export var metaName = [
+export const metaName = [
   'aglsterms.accessibility',
   'aglsterms.accessmode',
   'aglsterms.act',

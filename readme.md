@@ -43,17 +43,17 @@ In Node.js (version 12.20+, 14.14+, or 16.0+), install with [npm][]:
 npm install meta-name
 ```
 
-In Deno with [Skypack][]:
+In Deno with [`esm.sh`][esmsh]:
 
 ```js
-import {metaName} from 'https://cdn.skypack.dev/meta-name@3?dts'
+import {metaName} from 'https://esm.sh/meta-name@3'
 ```
 
-In browsers with [Skypack][]:
+In browsers with [`esm.sh`][esmsh]:
 
 ```html
 <script type="module">
-  import {metaName} from 'https://cdn.skypack.dev/meta-name@3?min'
+  import {metaName} from 'https://esm.sh/meta-name@3?bundle'
 </script>
 ```
 
@@ -145,7 +145,7 @@ See [How to Contribute to Open Source][contribute].
 
 [npm]: https://docs.npmjs.com/cli/install
 
-[skypack]: https://www.skypack.dev
+[esmsh]: https://esm.sh
 
 [license]: license
 

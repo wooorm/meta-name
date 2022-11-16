@@ -1,5 +1,5 @@
 /**
- * List of values that can be used as `name`s on HTML `meta` elements
+ * List of values that can be used as `name`s on HTML `meta` elements.
  *
  * @type {Array<string>}
  */
